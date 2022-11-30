@@ -1,0 +1,18 @@
+def isOdd(num):
+    if num%2==0:
+        return False
+    else:
+        return True
+
+def isPowerOfTwo( n):
+        if n == 1:
+            return True
+ 
+    # all other odd numbers are not powers of 2
+        elif n % 2 != 0 or n == 0:
+            return False
+ 
+        isPowerOfTwo(n/2)
+            
+            
+print(isPowerOfTwo(34))
