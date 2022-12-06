@@ -4,14 +4,9 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        #print(n)
-        if n==4:
-            return True
         if n==1:
             return True
-        if n%4 != 0:
+        elif n%4 != 0 or n==0:
             return False 
         
-        self.isPowerOfFour(int(n/4))
-        return True/4))
-        return True
+        return self.isPowerOfFour(int(n/4))
